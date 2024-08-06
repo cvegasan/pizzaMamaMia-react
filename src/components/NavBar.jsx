@@ -1,3 +1,4 @@
+import iconPizza from '../../public/icon-pizza.png'
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 // recordar condición ? true : false
 import FormatoMiles from './FormatoMiles';
@@ -14,7 +15,7 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto mb-2 mb-lg-0">
                         <Nav.Item className="cls-item-spacing">
-                            <Button variant="outline-light" size="sm">🍕Home</Button>
+                            <Button variant="outline-light" size="sm"><img src={iconPizza} alt="iconoPizza"></img> Home</Button>
                         </Nav.Item>
                         <Nav.Item className="cls-item-spacing">
                             <Button variant="outline-light" size="sm">{token ? '🔓Profile' : '🔐Login'}</Button>

@@ -1,4 +1,5 @@
 import FormatoMiles from './FormatoMiles';
+import iconPizza from '../../public/icon-pizza.png'
 import { Card, Button, ListGroup } from 'react-bootstrap';
 
 const CardPizza = (props) => {
@@ -12,7 +13,7 @@ const CardPizza = (props) => {
                 </ListGroup.Item>
                 <ListGroup.Item className='text-center'>
                     <p>Ingredientes:</p>
-                    <p className='cls-tamannio-ingredientes'>🍕 {props.ingredientes.join(', ')}</p>
+                    <p className='cls-tamannio-ingredientes'><img src={iconPizza} alt="iconoPizza"></img>{props.ingredientes.join(', ')}</p>
                 </ListGroup.Item>
                 <ListGroup.Item className='text-center'>
                     <strong>Precio: $<FormatoMiles numero = {props.precio} /></strong>
